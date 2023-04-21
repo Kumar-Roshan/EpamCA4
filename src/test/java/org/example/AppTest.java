@@ -27,30 +27,30 @@ public class AppTest {
 
 
         Select dropdown = new Select(driver.findElement(By.xpath("//*[@id=\"dropdowm-menu-1\"]")));
-        dropdown.selectByVisibleText("Python");
+        dropdown.selectByVisibleText("SQL");
 
         Select dropdown1 = new Select(driver.findElement(By.xpath("//*[@id=\"dropdowm-menu-2\"]")));
 
-        dropdown1.selectByVisibleText("TestNG");
+        dropdown1.selectByVisibleText("JUnit");
         Thread.sleep(1000);
         Select dropdown2 = new Select(driver.findElement(By.xpath("//*[@id=\"dropdowm-menu-3\"]")));
-        dropdown2.selectByVisibleText("JavaScript");
+        dropdown2.selectByVisibleText("JQuery");
         Thread.sleep(100);
 
 
-        WebElement checkbox2 = driver.findElement(By.cssSelector("input[value='option-2']"));
-        checkbox2.click();
+        WebElement checkbox = driver.findElement(By.cssSelector("input[value='option-1']"));
+        checkbox.click();
         Thread.sleep(1000);
         WebElement checkbox3 = driver.findElement(By.cssSelector("input[value='option-3']"));
         checkbox3.click();
         Thread.sleep(1000);
 
-       // WebElement checkbox4 = driver.findElement(By.cssSelector("input[value='option-4']"));
-       // checkbox4.click();
-       // Thread.sleep(1000);
+        WebElement checkbox4 = driver.findElement(By.cssSelector("input[value='option-4']"));
+        checkbox4.click();
+        Thread.sleep(1000);
 
 
-        WebElement radioButton = driver.findElement(By.cssSelector("input[value='Yellow']"));
+        WebElement radioButton = driver.findElement(By.cssSelector("input[value='yellow']"));
         radioButton.click();
         Thread.sleep(1000);
 
